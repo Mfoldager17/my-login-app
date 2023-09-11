@@ -1,19 +1,16 @@
 export default function Login() {
   return (
     <>
-    <div className="grid justify-items-center">
-        <form className="grid justify-center bg-slate-500 my-28 py-10 px-20 rounded-3xl opacity-80">
-            <div className="inline-grid mb-5 justify-items-center">
-                <label className="text-slate-300 mb-1"> Username: </label>
-                <input type="username" className="bg-slate-700 rounded-md h-9 mb-5 hover:shadow-slate-300 focus:shadow-slate-300 shadow-lg"/>
-                <label className="text-slate-300 mb-1"> Password: </label>
-                <input type="password" className="bg-slate-700 rounded-md h-9 mb-5 hover:shadow-slate-300 focus:shadow-slate-300 shadow-lg"/>
-            </div>
-            <input type="button" value="Login" className="h-9 text-slate-300 bg-slate-700 place-items-center rounded-md hover:shadow-slate-300 focus:shadow-slate-300 shadow-lg" />
-        </form>
-    </div>
+      <div className="grid place-items-center h-[80vh]">
+        <div className=" bg-slate-500 shadow-lg p-10 rounded-lg border-t-4 border-slate-400">
+          <h1 className="text-xl font-bold my-4 text-center text-slate-400">LOGIN</h1>
+          <form className="flex flex-col gap-3">
+            <input placeholder="Username" type="username" />
+            <input placeholder="Password" type="password" />
+            <button className="bg-slate-700 text-slate-400 rounded-lg h-9 my-5 font-bold cursor-pointer">Login</button>
+          </form>
+        </div>
+      </div>
     </>
   )
 }
-
-export {Login};

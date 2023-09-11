@@ -15,13 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-milky-way bg-100%'>
-        <div >
+      <body className='bg-slate-700'>
+        <div className='w-screen'>
           <Navbar />
         </div>
-        <div>
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   )
